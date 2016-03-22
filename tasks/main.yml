@@ -1,5 +1,8 @@
 ---
-
+- name: Install  build-essential for Debian OS family
+  apt: name=build-essential
+  tags: ["packages","vagrant"]
+  
 - name: Install Ruby packages
   apt:
     name: '{{ item }}'
